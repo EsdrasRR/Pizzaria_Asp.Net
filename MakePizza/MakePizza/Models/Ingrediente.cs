@@ -10,6 +10,8 @@ namespace MakePizza.Models
     [Table ("Ingrediente")]
     public class Ingrediente
     {
+        #region Propriedades
+
         [Key]
         public int IdIngrediente { get; set; }
 
@@ -28,5 +30,6 @@ namespace MakePizza.Models
         [Display(Name = "Nome Cliente")]
         public bool StatusIngrediente { get; set; }
 
+        #endregion
     }
 }

@@ -10,6 +10,8 @@ namespace MakePizza.Models
     [Table("Pizza")]
     public class Pizza
     {
+        #region Propriedades
+  
         [Key]
         public int IdPizza { get; set; }
 
@@ -26,5 +28,7 @@ namespace MakePizza.Models
         [Display(Name = "Status Pizza")]
         [Required(ErrorMessage = "Status Obrigatório ")]
         public string StatusPizza { get; set; }
+
+        #endregion
     }
 }

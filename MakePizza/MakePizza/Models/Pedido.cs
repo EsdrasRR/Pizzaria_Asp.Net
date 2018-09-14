@@ -10,6 +10,8 @@ namespace MakePizza.Models
     [Table("Pedido")]
     public class Pedido
     {
+        #region Propriedades
+
         [Key]
         public int IdPedido { get; set; }
 
@@ -30,5 +32,6 @@ namespace MakePizza.Models
         [Required(ErrorMessage = "Preço Total Obrigatório ")]
         public double PrecoTotalPedido { get; set; }
 
+        #endregion
     }
 }

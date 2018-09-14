@@ -11,6 +11,8 @@ namespace MakePizza.Models
     [Table("Cliente")]
     public class Cliente
     {
+        #region Propriedades
+
         [Key]
         public int IdCliente { get; set; }
 
@@ -40,5 +42,6 @@ namespace MakePizza.Models
         [Required(ErrorMessage = "Permissão Obrigatório ")]
         public bool AdminCliente { get; set; }
 
+        #endregion
     }
 }

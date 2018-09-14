@@ -10,10 +10,13 @@ namespace MakePizza.Models
     [Table("Ingrediente_Pizza")]
     public class Ingrediente_Pizza
     {
+        #region Propriedades
+
         [Key]
         public int IdIngrediente_Pizza { get; set; }
 
         public Ingrediente ingrediente { get; set; }
 
+        #endregion
     }
 }
