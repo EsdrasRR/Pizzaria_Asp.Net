@@ -13,6 +13,7 @@ namespace MakePizza.Models
         public string CpfCliente { get; set; }
         public string EmailCliente { get; set; }
         public string SenhaCliente { get; set; }
+        public bool AdminCliente { get; set; }
 
     }
 }
