@@ -13,5 +13,10 @@ namespace MakePizza.Controllers
         {
             return View();
         }
+
+        public ActionResult CadastrarCategoria()
+        {
+            return View();
+        }
     }
 }

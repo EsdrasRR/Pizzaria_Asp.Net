@@ -3,7 +3,6 @@
     ViewBag.Title = "Home";
 }
 
-<h2>Home</h2>
 
 <div>
     @using (Html.BeginForm("Home", "Cliente",
@@ -53,7 +52,7 @@
                 <div class="col-sm-offset-2 col-sm-10">
                     <input type="submit" value="Login"
                            class="btn btn-primary">
-                    @Html.ActionLink("Cadastrar", "CadastrarUsuario", "Usuario", new { @class = "btn btn-success" })
+                    @Html.ActionLink("Cadastrar", "CadastrarCliente", "Cliente", new { @class = "btn btn-success" })
                 </div>
             </div>
 

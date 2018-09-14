@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MakePizza.Models.Pizza>
+
+@{
+    ViewBag.Title = "MostrarPizza";
+}
+
+<h2>MostrarPizza</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TamanhoPizza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrecoPizza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusPizza)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TamanhoPizza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrecoPizza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatusPizza)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdPizza }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdPizza }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdPizza })
+        </td>
+    </tr>
+}
+
+</table>

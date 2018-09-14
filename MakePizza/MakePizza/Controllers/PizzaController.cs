@@ -13,5 +13,10 @@ namespace MakePizza.Controllers
         {
             return View();
         }
+
+        public ActionResult MostrarPizza()
+        {
+            return View();
+        }
     }
 }
